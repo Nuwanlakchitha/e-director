@@ -268,6 +268,46 @@ li {
 }
 
 
+#content main{
+    width: 100%;
+    padding: 36px 24px;
+    font-family: var(--poppins);
+}
+
+#content main .head-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap:16px;
+    flex-wrap: wrap;
+}
+
+#content main .head-title .left h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+#content main .head-title .left .breadcrumb {
+    display: none;
+    align-items: center;
+    grid-gap: 16px;
+}
+
+#content main .head-title .left .breadcrumb li a {
+    color: var(--dark-grey);
+    pointer-events: none;
+}
+
+#content main .head-title .left .breadcrumb li a.active{
+    color: var(--blue);
+    pointer-events: unset;
+}
+
+
+
+
 @media screen and (max-width: 768px) {
     #content{
         width: calc(100% - 60px);
